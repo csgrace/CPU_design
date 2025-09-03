@@ -1,0 +1,713 @@
+
+*** Running vivado
+    with args -log Main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Main.tcl -notrace
+Command: synth_design -top Main -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9888 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 345.918 ; gain = 103.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Main.v:2]
+INFO: [Synth 8-638] synthesizing module 'cpuclk' [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'cpuclk' (1#1) [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'button_is_pressed' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/button_is_pressed.v:1]
+	Parameter p bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'button_is_pressed' (2#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/button_is_pressed.v:1]
+INFO: [Synth 8-638] synthesizing module 'Instruction_fetch' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Instruction_fetch.v:2]
+INFO: [Synth 8-638] synthesizing module 'prgrom' [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'prgrom' (3#1) [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_fetch' (4#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Instruction_fetch.v:2]
+INFO: [Synth 8-638] synthesizing module 'Controller' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:1]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:46]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:46]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:48]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:48]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (5#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Controller.v:1]
+INFO: [Synth 8-638] synthesizing module 'Registers' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Registers.v:4]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (6#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Registers' (7#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Registers.v:4]
+INFO: [Synth 8-638] synthesizing module 'Imm_Gen' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Imm_Gen.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Imm_Gen' (8#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Imm_Gen.v:4]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (9#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-638] synthesizing module 'Data_memory' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Data_memory.v:2]
+INFO: [Synth 8-638] synthesizing module 'RAM' [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (10#1) [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/realtime/RAM_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'Data_memory' (11#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Data_memory.v:2]
+INFO: [Synth 8-638] synthesizing module 'MemOrIO' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/MemOrIO.v:2]
+INFO: [Synth 8-638] synthesizing module 'ioread' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/ioread.v:4]
+INFO: [Synth 8-256] done synthesizing module 'ioread' (12#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/ioread.v:4]
+INFO: [Synth 8-638] synthesizing module 'leds' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/leds.v:4]
+WARNING: [Synth 8-5788] Register ledwdata_sext_reg in module leds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/leds.v:25]
+WARNING: [Synth 8-5788] Register sext_on_reg in module leds is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/leds.v:26]
+INFO: [Synth 8-256] done synthesizing module 'leds' (13#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/leds.v:4]
+INFO: [Synth 8-638] synthesizing module 'show' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:110]
+INFO: [Synth 8-226] default block is never used [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:110]
+INFO: [Synth 8-226] default block is never used [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:110]
+INFO: [Synth 8-226] default block is never used [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:110]
+INFO: [Synth 8-256] done synthesizing module 'show' (14#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:4]
+INFO: [Synth 8-256] done synthesizing module 'MemOrIO' (15#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/MemOrIO.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Main' (16#1) [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/Main.v:2]
+WARNING: [Synth 8-3331] design ioread has unconnected port ioread_data_switch[4]
+WARNING: [Synth 8-3331] design ioread has unconnected port ioread_data_switch[3]
+WARNING: [Synth 8-3331] design ioread has unconnected port ioread_data_switch[2]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[31]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[30]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[29]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[28]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[27]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[26]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[25]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[24]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[23]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[22]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[21]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[20]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[19]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[18]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[17]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[16]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[15]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[14]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[13]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[12]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[11]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[10]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[9]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[8]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[7]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[6]
+WARNING: [Synth 8-3331] design ioread has unconnected port addr_in[5]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port MemRead
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[31]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[30]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[29]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[28]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[27]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[26]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[25]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[24]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[23]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[22]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[21]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[20]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[19]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[18]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[17]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[16]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[15]
+WARNING: [Synth 8-3331] design Data_memory has unconnected port Address[14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 400.516 ; gain = 158.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 400.516 ; gain = 158.141
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp3/prgrom_in_context.xdc] for cell 'ufetch/urom'
+Finished Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp3/prgrom_in_context.xdc] for cell 'ufetch/urom'
+Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp4/cpuclk_in_context.xdc] for cell 'u_clk'
+Finished Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp4/cpuclk_in_context.xdc] for cell 'u_clk'
+Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp5/RAM_in_context.xdc] for cell 'udatamem/udram'
+Finished Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp5/RAM_in_context.xdc] for cell 'udatamem/udram'
+Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.srcs/constrs_1/new/Main_con.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sure_btn1_IBUF'. [C:/Users/moduo/Desktop/project_1/project_1.srcs/constrs_1/new/Main_con.xdc:9]
+Finished Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.srcs/constrs_1/new/Main_con.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/moduo/Desktop/project_1/project_1.srcs/constrs_1/new/Main_con.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/moduo/Desktop/project_1/project_1.srcs/constrs_1/new/Main_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 747.195 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 747.195 ; gain = 504.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:40 . Memory (MB): peak = 747.195 ; gain = 504.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp4/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/.Xil/Vivado-1364-DESKTOP-0RVAKV2/dcp4/cpuclk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for udatamem/udram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ufetch/urom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 747.195 ; gain = 504.820
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "button_state" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "register_file_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_file_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUControl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUControl" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element clk_div_reg was removed.  [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:52]
+INFO: [Synth 8-5544] ROM "hex_to_seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hex_to_seg1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/ioread.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'tens_reg' [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:29]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 747.195 ; gain = 504.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   7 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	  32 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 71    
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module button_is_pressed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     30 Bit       Adders := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Instruction_fetch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+Module Imm_Gen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+Module ioread 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module leds 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module show 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  32 Input      7 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module MemOrIO 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element ur/clk_div_reg was removed.  [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/show.v:52]
+WARNING: [Synth 8-6014] Unused sequential element u_btn/btn_out_reg was removed.  [C:/Users/moduo/Desktop/project_1/project_1.srcs/sources_1/new/button_is_pressed.v:25]
+INFO: [Synth 8-5545] ROM "u_btn/button_state" won't be mapped to RAM because address size (30) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Instruction_fetch has unconnected port imm32[31]
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[28]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[24]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[20]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[16]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[12]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[8]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[30]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[26]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[22]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[18]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[14]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[10]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[31]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[31]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[27]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[23]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[19]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[15]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[11]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[29]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[25]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[21]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[17]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uIoread/ioread_data_reg[13]' (LDC) to 'uMemOrIO/uIoread/ioread_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[0]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[1]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[2]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[3]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[4]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[5]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[6]'
+INFO: [Synth 8-3886] merging instance 'uMemOrIO/uLeds/ledout_reg[6]' (FDCE) to 'uMemOrIO/uLeds/ledout_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uMemOrIO/\uLeds/ledout_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledout_reg[7]) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[29]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[28]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[27]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[26]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[25]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[24]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[23]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[22]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[21]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[20]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[19]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[18]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[17]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[16]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[15]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[14]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[13]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[12]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[11]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[10]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[9]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[8]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[7]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[6]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[5]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[4]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[3]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[2]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[1]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/cnt_reg[0]) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/button_state_reg) is unused and will be removed from module Main.
+WARNING: [Synth 8-3332] Sequential element (u_btn/button_state_last_reg) is unused and will be removed from module Main.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uMemOrIO/i_100/\ur/clk_div_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[12]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[28]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[24]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[20]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[16]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[30]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[26]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[22]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[18]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[14]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[10]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[15]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[11]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[31]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[27]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[23]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[19]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[29]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[25]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[21]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[17]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[13]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/ledwdata_sext_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (uMemOrIO/\uLeds/sext_on_reg_LDC )
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[31]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[31]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[30]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[30]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[29]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[29]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[28]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[28]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[27]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[27]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[26]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[26]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[25]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[25]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[24]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[24]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[23]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[23]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[22]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[22]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[21]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[21]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[20]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[20]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[19]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[19]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[18]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[18]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[17]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[17]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[16]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[16]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[15]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[15]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[14]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[14]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[13]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[13]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[12]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[12]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[11]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[11]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[10]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[10]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[9]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[9]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[8]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[8]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[7]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[7]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[6]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[6]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[5]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[5]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[4]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[4]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[3]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[3]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[2]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[2]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[1]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[1]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[0]_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/ledwdata_sext_reg[0]_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/sext_on_reg_LDC) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (uLeds/sext_on_reg_C) is unused and will be removed from module MemOrIO.
+WARNING: [Synth 8-3332] Sequential element (ur/clk_div_reg[15]) is unused and will be removed from module MemOrIO.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:07 ; elapsed = 00:02:15 . Memory (MB): peak = 747.195 ; gain = 504.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk/clk_out1' to pin 'u_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 760.461 ; gain = 518.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:05 ; elapsed = 00:03:50 . Memory (MB): peak = 864.426 ; gain = 622.051
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:24 ; elapsed = 00:05:01 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:26 ; elapsed = 00:05:06 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:26 ; elapsed = 00:05:06 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:27 ; elapsed = 00:05:07 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:27 ; elapsed = 00:05:07 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:27 ; elapsed = 00:05:07 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:27 ; elapsed = 00:05:07 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |RAM           |         1|
+|3     |prgrom        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |RAM    |     1|
+|2     |cpuclk |     1|
+|3     |prgrom |     1|
+|4     |CARRY4 |    52|
+|5     |LUT1   |     5|
+|6     |LUT2   |   123|
+|7     |LUT3   |    81|
+|8     |LUT4   |   166|
+|9     |LUT5   |   231|
+|10    |LUT6   |  1029|
+|11    |MUXF7  |   224|
+|12    |FDCE   |  1117|
+|13    |FDRE   |    33|
+|14    |LD     |     4|
+|15    |LDC    |     9|
+|16    |IBUF   |    15|
+|17    |OBUF   |    40|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+------------------+------+
+|      |Instance    |Module            |Cells |
++------+------------+------------------+------+
+|1     |top         |                  |  3194|
+|2     |  uMemOrIO  |MemOrIO           |   164|
+|3     |    uIoread |ioread            |     9|
+|4     |    uLeds   |leds              |    79|
+|5     |    ur      |show              |    72|
+|6     |  udatamem  |Data_memory       |    33|
+|7     |  ufetch    |Instruction_fetch |   811|
+|8     |  uimm      |Imm_Gen           |    56|
+|9     |  ureg      |Registers         |  2073|
++------+------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:27 ; elapsed = 00:05:07 . Memory (MB): peak = 890.242 ; gain = 647.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 106 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:04 ; elapsed = 00:04:54 . Memory (MB): peak = 890.242 ; gain = 301.188
+Synthesis Optimization Complete : Time (s): cpu = 00:03:27 ; elapsed = 00:05:08 . Memory (MB): peak = 890.242 ; gain = 647.867
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 304 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:32 ; elapsed = 00:05:22 . Memory (MB): peak = 890.242 ; gain = 659.352
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moduo/Desktop/project_1/project_1.runs/synth_1/Main.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 890.242 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.304 . Memory (MB): peak = 890.242 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  2 04:34:26 2025...

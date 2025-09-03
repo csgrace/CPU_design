@@ -1,0 +1,6 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+
+module lbub(input [7:0] b, output [31:0] inst);
+assign inst = {4'b0000, b, 20'h04103};
+endmodule

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 28 19:52:02 2025
+# Process ID: 20212
+# Current directory: D:/E/SUSTECH/2_down/CS_courses/computer organization/lab/project_1/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/E/SUSTECH/2_down/CS_courses/computer organization/lab/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/main_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/E/SUSTECH/2_down/CS_courses/computer organization/lab/project_1/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/E/SUSTECH/2_down/CS_courses/computer organization/lab/project_1/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/E/SUSTECH/2_down/CS_courses/computer -notrace
+couldn't read file "D:/E/SUSTECH/2_down/CS_courses/computer": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed May 28 19:52:02 2025...
