@@ -207,23 +207,23 @@ The complete assembly test (`proj.asm`) consists of **16 scenes** (2 groups x 8 
 
 ```
 CPU_design/
-  project_1.xpr                  # Vivado project file
-  project_1.srcs/                # RTL source files
-    *.v / *.vhdl               # Pipeline stages, hazard unit, control
-    constraints.xdc            # Pin constraints for target board
-  project_1.sim/                 # Simulation testbenches
-  project_1.runs/                # Synthesis and implementation runs
-    impl_1/                    # Post-place-and-route results
-  project_1.hw/                  # Hardware manager config
-  project_1.ip_user_files/       # Xilinx IP core settings
-  project_1.cache/               # Incremental compile cache
-  proj.asm                       # Full assembly test (16 scenes)
-  proj.coe                       # ROM initialization file
-  Test_scenario2_tc2_3_4_5.py    # Python automated simulation tests
-  midterm/                       # Mid-term defense (slides and notes)
-  summary.docx                  # Detailed design report (Chinese)
-  requirements.pdf              # Course requirements and grading rubric
-  README.md
+|-- project_1.xpr                  # Vivado project file
+|-- project_1.srcs/                # RTL source files
+|   |-- *.v / *.vhdl               # Pipeline stages, hazard unit, control
+|   |-- constraints.xdc            # Pin constraints for target board
+|-- project_1.sim/                 # Simulation testbenches
+|-- project_1.runs/                # Synthesis and implementation runs
+|   |-- impl_1/                    # Post-place-and-route results
+|-- project_1.hw/                  # Hardware manager config
+|-- project_1.ip_user_files/       # Xilinx IP core settings
+|-- project_1.cache/               # Incremental compile cache
+|-- proj.asm                       # Full assembly test (16 scenes)
+|-- proj.coe                       # ROM initialization file
+|-- Test_scenario2_tc2_3_4_5.py    # Python automated simulation tests
+|-- midterm/                       # Mid-term defense (slides and notes)
+|-- summary.docx                  # Detailed design report (Chinese)
+|-- requirements.pdf              # Course requirements and grading rubric
+└── README.md
 ```
 
 ---
