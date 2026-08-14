@@ -11,21 +11,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [ISA Design](#isa-design)
-- [Pipeline Design](#pipeline-design)
-- [Memory-Mapped I/O](#memory-mapped-io)
-- [Implementation and Validation](#implementation-and-validation)
-- [Test Program](#test-program)
-- [Results](#results)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-
----
-
 ## Overview
 
 This project implements a **5-stage pipelined RISC processor** as the capstone of CS202 Computer Architecture at SUSTech. Starting from instruction set design and a single-cycle datapath, we progressively built a fully pipelined microarchitecture with hazard detection, data forwarding, and memory-mapped I/O, culminating in FPGA bitstream generation and real board verification on a Xilinx development platform.
@@ -296,7 +281,3 @@ python Test_scenario2_tc2_3_4_5.py
 # 4. Validate on hardware
 # Set DIP switches -> press confirm -> observe LEDs / 7-segment display
 ```
-
----
-
-*CS202 Computer Architecture - SUSTech 2025*
