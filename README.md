@@ -15,33 +15,6 @@
 
 This project implements a **5-stage pipelined RISC processor** as the capstone of CS202 Computer Architecture at SUSTech. Starting from instruction set design and a single-cycle datapath, we progressively built a fully pipelined microarchitecture with hazard detection, data forwarding, and memory-mapped I/O, culminating in FPGA bitstream generation and real board verification on a Xilinx development platform.
 
-### Design Highlights
-
-| Feature | Description |
-|---------|-------------|
-| **5-stage pipeline** | IF -> ID -> EX -> MEM -> WB targeting single-cycle throughput |
-| **Hazard handling** | Full forwarding paths (EX->EX, MEM->EX) + pipeline stall for load-use |
-| **Harvard L1** | Separate instruction and data memory ports, zero structural hazard |
-| **Memory-mapped I/O** | Unified addressing for buttons, DIP switches, LEDs, 7-segment displays |
-| **16 test scenarios** | Assembly-level validation covering arithmetic, control, CRC, floating-point |
-| **Co-designed toolchain** | Python automated testing + Vivado synthesis + on-board debugging |
-
-```
-+-------------------------------------------------------------------+
-|                    CS202 CPU Design Flow                          |
-|                                                                   |
-|  ISA Definition -> Single-Cycle -> Pipeline -> Hazard & Forward   |
-|       |                |              |             |              |
-|  Assembly tests   Datapath sim   Throughput   FPGA bitstream      |
-|       +----------------+--------------+-------------+              |
-|                        |                                             |
-|              +---------v---------+                                  |
-|              | FPGA Board Verify |                                  |
-|              | (Switches->CPU->LEDs)|                                |
-|              +-------------------+                                  |
-+-------------------------------------------------------------------+
-```
-
 ---
 
 ## Architecture
@@ -281,3 +254,16 @@ python Test_scenario2_tc2_3_4_5.py
 # 4. Validate on hardware
 # Set DIP switches -> press confirm -> observe LEDs / 7-segment display
 ```
+
+---
+
+## Highlights
+
+| Feature | Description |
+|---------|-------------|
+| **5-stage pipeline** | IF -> ID -> EX -> MEM -> WB targeting single-cycle throughput |
+| **Hazard handling** | Full forwarding paths (EX->EX, MEM->EX) + pipeline stall for load-use |
+| **Harvard L1** | Separate instruction and data memory ports, zero structural hazard |
+| **Memory-mapped I/O** | Unified addressing for buttons, DIP switches, LEDs, 7-segment displays |
+| **16 test scenarios** | Assembly-level validation covering arithmetic, control, CRC, floating-point |
+| **Co-designed toolchain** | Python automated testing + Vivado synthesis + on-board debugging |
