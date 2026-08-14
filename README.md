@@ -1,4 +1,4 @@
-# CPU Design - CS202 Computer Architecture
+# CPU Design 
 
 [![SUSTech](https://img.shields.io/badge/SUSTech-CS202-blue)](https://www.sustech.edu.cn/)
 [![Course](https://img.shields.io/badge/Course-Computer%20Architecture-green)]()
